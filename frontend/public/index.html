@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mercado Online</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP MERCADO</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="root"></div>
-  <script src="scripts.js"></script>
+    <header>
+        <h1>APP MERCADO</h1>
+    </header>
+    <main>
+        <section id="product-list">
+            <h2>Lista de Produtos</h2>
+            <ul id="products"></ul>
+        </section>
+        <section id="add-product">
+            <h2>Cadastrar Produto</h2>
+            <form id="product-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="price">Preço:</label>
+                <input type="number" id="price" name="price" step="0.01" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
